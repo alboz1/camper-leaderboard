@@ -1,0 +1,19 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    height: 100vh;
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px rgba(0,0,0, .3);
+}
+
+.container .leaderboard-header {
+    display: flex;
+    justify-content: space-around;
+    color: var(--secondary);
+}
+
+.container .leaderboard-header p:not(:first-child):hover {
+    color: var(--primary);
+    cursor: pointer;
+}
