@@ -5,15 +5,28 @@
     height: 100vh;
     box-sizing: border-box;
     box-shadow: 0 3px 5px rgba(0,0,0, .3);
+    overflow-y: scroll;
 }
 
 .container .leaderboard-header {
     display: flex;
-    justify-content: space-around;
+    text-align: center;
     color: var(--secondary);
+}
+
+.container .leaderboard-header p {
+    flex: 1;
+    margin: 0;
+    padding: 1em 0;
 }
 
 .container .leaderboard-header p:not(:first-child):hover {
     color: var(--primary);
     cursor: pointer;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
