@@ -5,11 +5,11 @@ const CamperProfile = (props) => {
     return (
         <li className="profile">
             <div className="profile-info">
-                <img src={props.avatar} alt="avatar" />
-                <p className="name">{props.name}</p>
+                <img src={props.camper.img} alt="avatar" />
+                <a href={`https://www.freecodecamp.com/${props.camper.username}`} target="_blank" className="name">{props.camper.username}</a>
             </div>
-            <p className="points" id="30-days-points">{props.recentPoints}</p>
-            <p className="points" id="all-time-points">{props.allTimePoints}</p>
+            <p className="points">{props.camper.recent}</p>
+            <p className="points">{props.camper.alltime}</p>
         </li>
     );
 }

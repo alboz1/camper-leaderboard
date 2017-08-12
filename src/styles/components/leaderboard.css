@@ -25,6 +25,11 @@
     cursor: pointer;
 }
 
+.container .leaderboard-header p.active {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
 .container ul {
     list-style: none;
     padding: 0;

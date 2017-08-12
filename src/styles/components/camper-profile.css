@@ -2,7 +2,7 @@
     display: flex;
     text-align: center;
     background: #F3F7FB;
-    color: var(--primary);
+    color: var(--secondary);
     margin-bottom: .94em;
 }
 
@@ -13,6 +13,15 @@
 .profile .profile-info {
     display: flex;
     align-items: center;
+}
+
+.profile .profile-info a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.profile .profile-info a:hover {
+    text-decoration: underline;
 }
 
 .profile .profile-info img {
